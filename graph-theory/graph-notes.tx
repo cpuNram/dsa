@@ -19,6 +19,6 @@
 16) Complete graph: A graph is complete if the degree of every node is n-1, i.e., the graph
     contains all possible edges between the nodes.
 17) Graph colouring: Each node is assigned a color so that no adjacent nodes
-     have the same color. A graph is bipartite if it is possible to color it using
-     two colors. It turns out that a graph is bipartite exactly when it does not contain
-     a cycle with an odd number of edges.
+    have the same color. A graph is bipartite if it is possible to color it using
+    two colors. It turns out that a graph is bipartite exactly when it does not contain
+    a cycle with an odd number of edges.
