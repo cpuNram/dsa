@@ -2,7 +2,7 @@ This is solution to hacker rank problem https://www.hackerrank.com/challenges/jo
 Using Depth First Search find the connected components (=countries) and number of nodes (=astronauts
 representing country).
 
-One of the interesting test case that failed for me:
+One of the interesting test case (Test Case #11) hat failed for me:
 
 Input:
 
@@ -15,3 +15,5 @@ Input:
 Expected output:
 
     4999949998
+    
+The fix was using uint64_t data type.
