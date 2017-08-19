@@ -5,6 +5,7 @@ representing country).
 One of the interesting test case that failed for me:
 
 Input:
+
     100000 2
     
     1 2
@@ -12,4 +13,5 @@ Input:
     3 4
 
 Expected output:
+
     4999949998
