@@ -2,7 +2,7 @@ This is solution to hacker rank problem https://www.hackerrank.com/challenges/jo
 Using Depth First Search find the connected components (=countries) and number of nodes (=astronauts
 representing country).
 
-One of the interesting test case (Test Case #11) hat failed for me:
+One of the interesting test case (Test Case #11) that failed for me:
 
 Input:
 
