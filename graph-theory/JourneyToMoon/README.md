@@ -1,5 +1,5 @@
 This is solution to hacker rank problem https://www.hackerrank.com/challenges/journey-to-the-moon/problem.
-The idea: Using Depth First Search find the connected components (=countries) and number of nodes (=astronauts
+Using Depth First Search find the connected components (=countries) and number of nodes (=astronauts
 representing country).
 
 One of the interesting test case that failed for me:
