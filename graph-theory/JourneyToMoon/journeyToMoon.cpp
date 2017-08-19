@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-
 class graph {
     public:
         int totalNodes;
@@ -21,8 +19,8 @@ class graph {
 graph::graph(int nodes)
 {   
     totalNodes = nodes;
-    visited.resize(totalNodes, 0); // bool visited[totalNodes]
-    adjList.resize(totalNodes); // vector<int> adjList[totalNodes]
+    visited.resize(totalNodes, 0); // bool visited[totalNodes];
+    adjList.resize(totalNodes); // vector<int> adjList[totalNodes];
 }
 
 int
@@ -82,15 +80,12 @@ main(void)
     int N, P;
     scanf("%d %d", &N, &P);
     graph g(N);
-
     for (int i = 0; i < P; i++) {
         int u, v;
         scanf("%d %d", &u, &v);
         g.addNode(u, v);
     }
-
     int cc = g.connectedComponets();
     uint64_t selectionWays = g.pickAstronauts();
-
     cout << selectionWays << "\n";
 }
