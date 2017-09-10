@@ -4,6 +4,11 @@
 
 using namespace std;
 
+/* 
+ * Idea: maintain unordered_set. Add each incoming element from list
+ * to the set. If element already in the set, it means it is duplicate
+ * in the list, so delete it from the list.
+ */ 
 void
 delDuplicates(list<int> &list_)
 {
