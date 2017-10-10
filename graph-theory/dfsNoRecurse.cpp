@@ -30,6 +30,7 @@ void Graph::dfs(int start)
 {
     stack<int> stk;
     stk.push(start);
+    visited[v] = 1;
     while (!stk.empty()) {
         int u = stk.top();
         stk.pop();
