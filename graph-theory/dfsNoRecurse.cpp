@@ -15,7 +15,11 @@ public:
         adjList = new vector<int> [nodes];
         visited.resize(nodes, 0);
     }
-    ~Graph(void) { delete[] adjList; visited.clear();}
+    ~Graph(void)
+    {
+        delete[] adjList;
+        visited.clear();
+    }
     void addNode(int u, int v)
     {
         adjList[u].push_back(v);
@@ -24,21 +28,29 @@ public:
     void dfs(int start)
     {
         stack<int> stk;
-        stk.push(start), visited[start] = 1;
+        stk.push(start);
+        visited[start] = 1;
         while (!stk.empty()) {
-            int u = stk.top(); stk.pop();
+            int u = stk.top();
+            stk.pop();
             for (auto &v : adjList[u]) {
                 if (visited[v]) continue;
-                visited[v] = 1, stk.push(v);
+                visited[v] = 1;
+                stk.push(v);
             }
         }
     }
     int connectedComp(void)
     {
         int cc = 0;
-        for (int i = 0; i < N; i++)
-            for (auto &u :  adjList[i])
-                if (!visited[u]) dfs(u), ++cc;
+        for (int i = 0; i < N; i++) {
+            for (auto &u :  adjList[i]) {
+                if (!visited[u]) {
+                    dfs(u);
+                    ++cc;
+                }
+            }
+        }
         return cc;
     }
 };
