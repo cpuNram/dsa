@@ -31,6 +31,7 @@ void Graph::bfs(int startNode)
 {
     queue<int> q;
     q.push(startNode);
+    visited[startNode] = 1;
     while (!q.empty()) {
         int u = q.front();
         q.pop();
