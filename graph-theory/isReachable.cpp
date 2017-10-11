@@ -17,6 +17,7 @@ isReachable(int u, int v)
 {
     stack<int> stk;
     stk.push(u);
+    visited[u] = 1;
     while (!stk.empty()) {
         int node = stk.top();
         stk.pop();
