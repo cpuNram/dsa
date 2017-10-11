@@ -36,10 +36,13 @@ class Graph {
             int cc = 0;
             for (int i = 0; i < N; i++) {
                 for (auto &u : adjList[i]) {
-                    if (!visited[u]) {
-                        dfs(u), ++cc;
-                    }
+                    if (visited[u]) continue;
+                    dfs(u); ++cc;
                 }
+            }
+            // count each unvisited node.
+            for (int i = 0; i < N; i++) {
+                if (!visited[i]) ++cc;
             }
             return cc;
         }
