@@ -24,3 +24,12 @@
     a cycle with an odd number of edges.
 18) Simple graph: A graph is simple if no edge starts and ends at the same node, and there
     are no multiple edges between two nodes.
+
+
+
+
+Directed Graphs:
+---------------
+1) In a directed graph each edge has start and end node.
+2) A "cycle" in a graph is sequence of edges v1, v2.....vn-1, vn, v1 such that
+   (v1, v2), (v2, v3), (vn-1, vn) and (vn, v1) are edges.
