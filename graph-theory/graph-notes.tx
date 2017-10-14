@@ -35,4 +35,8 @@ Directed Graphs:
    (v1, v2), (v2, v3), (vn-1, vn) and (vn, v1) are edges.
 3) If G congrains a cycle, it cannot be linearly ordered.
 4) A directed graph G is a Direct Asyclic Graph (DAG) if it has no cycles.
+5) Source: A source in a directed graph is a node with no incoming edges
+   (i.e it has only outgoing edges).
+6) Sink: A sink in a directed graph is a node with no outgoing edges
+   (i.e it has only incoming edges).
 
