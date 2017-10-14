@@ -33,3 +33,6 @@ Directed Graphs:
 1) In a directed graph each edge has start and end node.
 2) A "cycle" in a graph is sequence of edges v1, v2.....vn-1, vn, v1 such that
    (v1, v2), (v2, v3), (vn-1, vn) and (vn, v1) are edges.
+3) If G congrains a cycle, it cannot be linearly ordered.
+4) A directed graph G is a Direct Asyclic Graph (DAG) if it has no cycles.
+
