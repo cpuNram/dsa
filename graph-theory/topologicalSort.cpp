@@ -55,6 +55,7 @@ class DirectedGraph {
         }
         void print(void)
         {
+            if (tsortList.empty()) return;
             cout << "Topological sort: ";
             auto iter = tsortList.rbegin();
             for (; iter != tsortList.rend(); iter++) {
