@@ -1,0 +1,6 @@
+How do you write reentrant code?
+What is static variable?
+How to create one BST from two BSTs ? What is the most efficient method?
+
+What is hash table?
+Producer consumer problem?
