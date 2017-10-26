@@ -5,6 +5,9 @@ How to create one BST from two BSTs ? What is the most efficient method?
 What is hash table?
 Producer consumer problem?
 
+Design a traffic signal? Design patterns.
+Cloud applications. Distributed systems.
+
 Data structures and algorithms practices:
 1) Leetcode;
 2) Geeksforgeeks;
