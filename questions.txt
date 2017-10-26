@@ -4,3 +4,17 @@ How to create one BST from two BSTs ? What is the most efficient method?
 
 What is hash table?
 Producer consumer problem?
+
+Data structures and algorithms practices:
+1) Leetcode;
+2) Geeksforgeeks;
+3) Hackerrank;
+4) Lintcode 
+
+System design:
+1) http://blog.gainlo.co
+2) http://horicky.blogspot.com
+3) https://www.hiredintech.com/classrooms/system-design/lesson/52
+4) http://www.lecloud.net/tagged/scalability
+5) http://tutorials.jenkov.com/software-architecture/index.html
+6) http://highscalability.com/
