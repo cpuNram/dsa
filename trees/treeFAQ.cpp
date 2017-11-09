@@ -1,4 +1,6 @@
 
+/* Reference: http://cslibrary.stanford.edu/110/BinaryTrees.pdf */
+
 
 /* In BST, minimum value is in the left most node. */
 int minValue(struct node *head)
@@ -21,5 +23,18 @@ bool hasPathSum(struct node *head, int sum)
     else {
         int subSum = sum - head->data;
         return hasPathSum(head->left, subSum) || hasPathSum(head->right, subSum);
+    }
+}
+
+/* Change a tree so that the roles of the left and right pointers are swapped at every node. */
+void mirrorTree(struct node *head)
+{
+    if (!head) return;
+    else {
+        mirrorTree(head->left);
+        mirrorTree(head->right);
+        struct node *tmp = head->left;
+        head->left = head->right;
+        head->right = tmp;
     }
 }
