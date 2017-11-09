@@ -53,3 +53,13 @@ bool sameTree(struct node *T1, struct node *T2)
     } else return false;
 }
 
+/* Given a binary tree, return true of its BST */
+
+bool isBST(struct node *node)
+{
+    if (!node) return true;
+    if (node->left && minVal(node->left) > node->data) return false;
+    if (node->right && maxVal(node->right) < node->data) return false;
+    if (!isBST(node->left) || !isBST(node->right)) rerturn false;
+    return true;
+}
