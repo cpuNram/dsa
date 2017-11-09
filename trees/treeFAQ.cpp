@@ -38,3 +38,18 @@ void mirrorTree(struct node *head)
         head->right = tmp;
     }
 }
+
+/**
+ * Given two binary trees, return true if they are structurally identical -- they are made
+ * of nodes with the same values arranged in the same way.
+ */
+
+bool sameTree(struct node *T1, struct node *T2)
+{
+    if (!T1 && !T2) return true;
+    else if (T1 && T2) {
+        return (T->data == T2->data && sameTree(T1->left, T2->left)
+                && sameTree(T1->right, T2->right));
+    } else return false;
+}
+
